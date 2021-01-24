@@ -27,8 +27,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    //aaa
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
