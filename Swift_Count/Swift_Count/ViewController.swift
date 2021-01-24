@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tap(_ sender: Any) {
         answer = textField.text!
         
-        let nextVC :NextViewController = storyboard?.instantiateViewController(withIdentifier: "next") as! NextViewController
+        let nextVC :NextViewController = storyboard?.instantiateViewController(identifier: "next") as! NextViewController
         nextVC.enteredAnswer = answer
         navigationController?.pushViewController(nextVC, animated: true)
     }

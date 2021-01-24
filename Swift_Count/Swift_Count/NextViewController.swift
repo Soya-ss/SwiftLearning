@@ -9,14 +9,15 @@ import UIKit
 
 class NextViewController: UIViewController{
 
-    @IBOutlet weak var answerText: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
     
     var enteredAnswer = String()
     var correctAnswer = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        answerText.text = enteredAnswer
+        answerLabel.text = enteredAnswer
+        
     }
     
 
